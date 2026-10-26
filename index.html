@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <div class="hero-content">
+<div class="avatar-wrap">
+  <div class="avatar-glow">
+    <div class="avatar" role="img" aria-label="Temporary developer avatar">
+      👨🏻‍💻
+    </div>
+  </div>
+  <span class="avatar-status"></span>
+</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal developer portfolio and projects.">
+  <title>Farman Junejo | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">&lt;Dev /&gt;</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle color theme">☀️</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
+        <h1>Hi, Buddy ! I'm  <span>Farman Junejo.</span></h1>
+        <p>A Software Engineering graduate building modern web applications and exploring AI technologies.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work ↗</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+        </div>
+        <div class="availability"><span></span> Learning, building, and growing every day</div>
+      </div>
+      <div class="code-card">
+        <div class="window-dots"><i></i><i></i><i></i><span>developer.js</span></div>
+        <pre><code><span class="purple">const</span> developer = {
+  name: <span class="green">"Farman Junejo"</span>,
+  passion: <span class="green">"Building things"</span>,
+  skills: [
+    <span class="green">"HTML"</span>,
+    <span class="green">"CSS"</span>,
+    <span class="green">"JavaScript"</span>
+  ],
+  learning: <span class="blue">true</span>
+};
+
+<span class="purple">console</span>.log(
+  <span class="green">"Hello, world!"</span>
+);</code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <span class="eyebrow">A LITTLE ABOUT ME</span>
+      <h2>Building my future, <span>one project at a time.</span></h2>
+      <p class="section-intro">I'm learning to create useful, accessible, and beautiful digital products. This portfolio is the beginning of my journey.</p>
+      <div class="skills">
+        <div class="skill">🌐 HTML</div>
+        <div class="skill">🎨 CSS</div>
+        <div class="skill">⚡ JavaScript</div>
+        <div class="skill">🟢 Node.js</div>
+        <div class="skill">🔧 Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <span class="eyebrow">WHAT I'M BUILDING</span>
+      <h2>Featured projects</h2>
+      <p class="section-intro">These are starter project ideas. Replace them with your real work as you build it.</p>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-icon">🌐</div>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website to introduce myself and share my work.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="project">
+          <div class="project-icon">✅</div>
+          <h3>Task Manager</h3>
+          <p>A future app for organizing tasks and tracking daily progress.</p>
+          <div class="tags"><span>JavaScript</span><span>UI</span></div>
+        </article>
+        <article class="project">
+          <div class="project-icon">🤖</div>
+          <h3>AI Assistant</h3>
+          <p>A future experiment exploring useful AI-powered experiences.</p>
+          <div class="tags"><span>Node.js</span><span>AI</span></div>
+        </article>
+      </div>
+    </section>
+
+    
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <p class="section-label">GET IN TOUCH</p>
+    <h2>Let's Work Together</h2>
+    <p class="contact-description">
+      Have a project, job opportunity, or question?
+      Send me a message. I'd love to hear from you.
+    </p>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="What would you like to discuss?"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <button id="submit-button" type="submit">
+        <span id="button-text">Send Message ↗</span>
+      </button>
+
+      <p
+        id="form-status"
+        class="form-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+  </div>
+</section>
+
+<!-- Load EmailJS first, then your own JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<section id="projects" class="projects-section">
+  <div class="section-heading">
+    <p class="section-label">MY WORK</p>
+    <h2>Featured Projects</h2>
+    <p>Things I'm building as a developer.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <div class="project-icon">🌐</div>
+      <p class="project-type">WEB DEVELOPMENT</p>
+      <h3>Personal Portfolio</h3>
+      <p>
+        A responsive portfolio showcasing my skills,
+        projects, and journey in software engineering.
+      </p>
+      <div class="tech-tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/" target="_blank"
+           rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#contact">Contact Me ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-icon">🤖</div>
+      <p class="project-type">ARTIFICIAL INTELLIGENCE</p>
+      <h3>AI Learning Project</h3>
+      <p>
+        A space for experimenting with AI concepts,
+        learning tools, and intelligent applications.
+      </p>
+      <div class="tech-tags">
+        <span>Python</span><span>AI</span><span>Learning</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/" target="_blank"
+           rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#contact">Discuss Project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-icon">⚡</div>
+      <p class="project-type">JAVASCRIPT</p>
+      <h3>Interactive Web App</h3>
+      <p>
+        An experimental application focused on useful
+        features, clean interfaces, and user experience.
+      </p>
+      <div class="tech-tags">
+        <span>JavaScript</span><span>UI</span><span>CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/" target="_blank"
+           rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#contact">Discuss Project ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <footer>
+    <a class="logo" href="#home">&lt;Dev /&gt;</a>
+    <p>Built with curiosity and code. © <span id="year"></span></p>
+  </footer>
+
+  <!-- EmailJS library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Your JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
