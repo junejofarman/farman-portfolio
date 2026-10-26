@@ -1,259 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <div class="hero-content">
-<div class="avatar-wrap">
-  <div class="avatar-glow">
-    <div class="avatar" role="img" aria-label="Temporary developer avatar">
-      👨🏻‍💻
-    </div>
-  </div>
-  <span class="avatar-status"></span>
-</div>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My personal developer portfolio and projects.">
-  <title>Farman Junejo | Software Engineer</title>
+  <meta name="description" content="Farman Junejo is a software engineering graduate building thoughtful web experiences and exploring AI.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Farman Junejo — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">&lt;Dev /&gt;</a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="themeToggle" class="theme-btn" aria-label="Toggle color theme">☀️</button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Farman Junejo home"><span class="brand-mark">&lt;/&gt;</span><span>farman<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-button" type="button" aria-label="Switch to light theme" title="Toggle theme">☼</button>
+        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <button id="menuToggle" class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
-        <h1>Hi, Buddy ! I'm  <span>Farman Junejo.</span></h1>
-        <p>A Software Engineering graduate building modern web applications and exploring AI technologies.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">Explore my work ↗</a>
-          <a class="btn secondary" href="#contact">Contact me</a>
+  <main id="main">
+    <section class="hero section-shell" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="availability"><span class="availability-dot"></span> OPEN TO OPPORTUNITIES</div>
+          <p class="overline">SOFTWARE ENGINEERING · WEB DEVELOPMENT</p>
+          <h1>Turning ideas into <span class="gradient-text">useful digital</span> experiences.</h1>
+          <p class="hero-intro">Hey, I'm <strong>Farman Junejo</strong> — a software engineering graduate learning, building, and refining web experiences with clean code and thoughtful design.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta"><span>Based in Pakistan</span><span class="meta-divider"></span><span>Always learning</span></div>
         </div>
-        <div class="availability"><span></span> Learning, building, and growing every day</div>
-      </div>
-      <div class="code-card">
-        <div class="window-dots"><i></i><i></i><i></i><span>developer.js</span></div>
-        <pre><code><span class="purple">const</span> developer = {
-  name: <span class="green">"Farman Junejo"</span>,
-  passion: <span class="green">"Building things"</span>,
-  skills: [
-    <span class="green">"HTML"</span>,
-    <span class="green">"CSS"</span>,
-    <span class="green">"JavaScript"</span>
+        <div class="hero-visual" aria-label="Decorative code illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="floating-chip chip-top"><span class="chip-dot purple"></span> Curious by default</div>
+          <div class="code-window">
+            <div class="window-bar"><div class="window-controls"><i></i><i></i><i></i></div><span>about-farman.js</span><span class="window-lock">●</span></div>
+            <pre><code><span class="code-purple">const</span> <span class="code-blue">developer</span> = {
+  name: <span class="code-green">"Farman Junejo"</span>,
+  focus: [
+    <span class="code-green">"Web development"</span>,
+    <span class="code-green">"Clean UI"</span>,
+    <span class="code-green">"AI exploration"</span>
   ],
-  learning: <span class="blue">true</span>
+  mindset: <span class="code-green">"Build. Learn. Improve."</span>
 };
 
-<span class="purple">console</span>.log(
-  <span class="green">"Hello, world!"</span>
-);</code></pre>
+<span class="code-purple">while</span> (curious) {
+  buildSomethingUseful();
+}</code></pre>
+            <div class="code-footer"><span><span class="pulse-dot"></span> Ready to build</span><span>UTF-8&nbsp; · &nbsp;JS</span></div>
+          </div>
+          <div class="floating-chip chip-bottom"><span class="chip-icon">✳</span> Thoughtful details matter</div>
+          <div class="visual-spark spark-one">✳</div><div class="visual-spark spark-two">+</div>
+        </div>
+      </div>
+      <div class="container trust-strip"><span>MY CURRENT TOOLKIT</span><div class="tool-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>Git & GitHub</span></div></div>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="container about-grid">
+        <div class="section-intro-block"><p class="overline">A LITTLE ABOUT ME</p><h2>Good software starts with <span class="gradient-text">curiosity.</span></h2></div>
+        <div class="about-copy"><p>I'm at the beginning of my professional journey in software engineering, focused on creating useful, accessible, and dependable digital products.</p><p>I enjoy taking a rough idea, breaking it into smaller problems, and turning those pieces into something people can use. I'm continuing to strengthen my frontend foundations while exploring backend development and AI.</p><div class="about-note"><span class="note-icon">↳</span><span>My approach: stay curious, write understandable code, and improve one iteration at a time.</span></div></div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <span class="eyebrow">A LITTLE ABOUT ME</span>
-      <h2>Building my future, <span>one project at a time.</span></h2>
-      <p class="section-intro">I'm learning to create useful, accessible, and beautiful digital products. This portfolio is the beginning of my journey.</p>
-      <div class="skills">
-        <div class="skill">🌐 HTML</div>
-        <div class="skill">🎨 CSS</div>
-        <div class="skill">⚡ JavaScript</div>
-        <div class="skill">🟢 Node.js</div>
-        <div class="skill">🔧 Git & GitHub</div>
+    <section class="section section-skills" id="skills">
+      <div class="container">
+        <div class="section-heading"><div><p class="overline">TOOLS & TECHNOLOGIES</p><h2>Skills I'm growing</h2></div><p class="heading-note">A practical foundation, with plenty more to learn.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-number">01</span><div class="skill-symbol symbol-orange">⌘</div><h3>Frontend</h3><p>Building clear, responsive interfaces for the web.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+          <article class="skill-card"><span class="skill-number">02</span><div class="skill-symbol symbol-green">⌁</div><h3>Backend foundations</h3><p>Learning how applications handle data and server logic.</p><div class="skill-tags"><span>Node.js</span><span>APIs</span></div></article>
+          <article class="skill-card"><span class="skill-number">03</span><div class="skill-symbol symbol-blue">⌘</div><h3>Developer workflow</h3><p>Practicing the habits that make projects easier to maintain.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>Debugging</span></div></article>
+          <article class="skill-card"><span class="skill-number">04</span><div class="skill-symbol symbol-pink">✳</div><h3>AI exploration</h3><p>Exploring how intelligent tools can solve real problems.</p><div class="skill-tags"><span>AI concepts</span><span>Experimentation</span></div></article>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <span class="eyebrow">WHAT I'M BUILDING</span>
-      <h2>Featured projects</h2>
-      <p class="section-intro">These are starter project ideas. Replace them with your real work as you build it.</p>
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-icon">🌐</div>
-          <h3>Personal Portfolio</h3>
-          <p>A responsive website to introduce myself and share my work.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        </article>
-        <article class="project">
-          <div class="project-icon">✅</div>
-          <h3>Task Manager</h3>
-          <p>A future app for organizing tasks and tracking daily progress.</p>
-          <div class="tags"><span>JavaScript</span><span>UI</span></div>
-        </article>
-        <article class="project">
-          <div class="project-icon">🤖</div>
-          <h3>AI Assistant</h3>
-          <p>A future experiment exploring useful AI-powered experiences.</p>
-          <div class="tags"><span>Node.js</span><span>AI</span></div>
-        </article>
+    <section class="section section-projects" id="projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="overline">SELECTED WORK</p><h2>Projects & experiments</h2></div><p class="heading-note">A growing collection of things I'm building and learning from.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-topline"><span class="project-category">01 / WEB DEVELOPMENT</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-art art-portfolio"><div class="mini-browser"><div class="mini-browser-bar"><i></i><i></i><i></i></div><div class="mini-browser-content"><span class="mini-kicker">HELLO, WORLD</span><b>Personal<br>portfolio<span>.</span></b><div class="mini-lines"><i></i><i></i></div><div class="mini-button"></div></div></div><div class="art-orb"></div></div>
+            <div class="project-body"><h3>Personal Portfolio</h3><p>A responsive home for my story, skills, and projects, with a working contact form powered by EmailJS.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>EmailJS</span></div><span class="project-status"><i></i> In progress</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span class="project-category">02 / PRODUCTIVITY</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-art art-task"><div class="task-panel"><div class="task-panel-head"><span>Today</span><span>•••</span></div><div class="task-row"><i class="task-check checked"></i><span>Plan the week</span></div><div class="task-row"><i class="task-check"></i><span>Build a feature</span></div><div class="task-row"><i class="task-check"></i><span>Review progress</span></div><div class="task-progress"><i></i></div></div><div class="task-bubble">3 tasks</div></div>
+            <div class="project-body"><h3>Task Manager <span class="planned-label">PLANNED</span></h3><p>A planned project to practice creating, updating, and organizing tasks in a simple interface.</p><div class="skill-tags"><span>JavaScript</span><span>UI</span><span>CRUD</span></div><span class="project-status status-planned"><i></i> Planned experiment</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span class="project-category">03 / AI EXPLORATION</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-art art-ai"><div class="ai-core">✳</div><span class="ai-node node-a">AI</span><span class="ai-node node-b">{ }</span><span class="ai-node node-c">✦</span><span class="ai-line line-a"></span><span class="ai-line line-b"></span><span class="ai-line line-c"></span></div>
+            <div class="project-body"><h3>AI Learning Lab <span class="planned-label">PLANNED</span></h3><p>A space to experiment with AI concepts and explore useful, human-centered applications.</p><div class="skill-tags"><span>Python</span><span>AI concepts</span><span>Learning</span></div><span class="project-status status-planned"><i></i> Planned experiment</span></div>
+          </article>
+        </div>
+        <p class="projects-disclaimer">Project status is shown honestly. Planned ideas are not presented as completed work.</p>
       </div>
     </section>
 
-    
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <p class="section-label">GET IN TOUCH</p>
-    <h2>Let's Work Together</h2>
-    <p class="contact-description">
-      Have a project, job opportunity, or question?
-      Send me a message. I'd love to hear from you.
-    </p>
-
-    <form id="contact-form" class="contact-form">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          autocomplete="name"
-          required
-        />
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy"><p class="overline">HAVE SOMETHING IN MIND?</p><h2>Let's make something <span class="gradient-text">meaningful.</span></h2><p>Have a job opportunity, a project idea, or just want to connect? Send me a message — I'll be glad to hear from you.</p><div class="contact-detail"><span class="contact-detail-icon">↗</span><div><span class="detail-label">BASED IN</span><strong>Pakistan · Available remotely</strong></div></div><div class="contact-detail"><span class="contact-detail-icon">✳</span><div><span class="detail-label">INTERESTED IN</span><strong>Web development · Junior opportunities</strong></div></div></div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-heading"><h3>Send a message</h3><span>I'll get back to you</span></div>
+          <div class="form-row"><div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="e.g. Alex Smith" autocomplete="name" required></div><div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="What would you like to discuss?" required></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me a little about it..." required></textarea></div>
+          <button id="submit-button" class="button button-primary submit-button" type="submit"><span id="button-text">Send message</span><span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-privacy">Your message is sent securely through the configured email service.</p>
+        </form>
       </div>
+    </section>
+  </main>
 
-      <div class="form-group">
-        <label for="email">Your Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="you@example.com"
-          autocomplete="email"
-          required
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="What would you like to discuss?"
-          required
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="Write your message here..."
-          required
-        ></textarea>
-      </div>
-
-      <button id="submit-button" type="submit">
-        <span id="button-text">Send Message ↗</span>
-      </button>
-
-      <p
-        id="form-status"
-        class="form-status"
-        role="status"
-        aria-live="polite"
-      ></p>
-    </form>
-  </div>
-</section>
-
-<!-- Load EmailJS first, then your own JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
-
-
-<section id="projects" class="projects-section">
-  <div class="section-heading">
-    <p class="section-label">MY WORK</p>
-    <h2>Featured Projects</h2>
-    <p>Things I'm building as a developer.</p>
-  </div>
-
-  <div class="project-grid">
-    <article class="project-card">
-      <div class="project-icon">🌐</div>
-      <p class="project-type">WEB DEVELOPMENT</p>
-      <h3>Personal Portfolio</h3>
-      <p>
-        A responsive portfolio showcasing my skills,
-        projects, and journey in software engineering.
-      </p>
-      <div class="tech-tags">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/" target="_blank"
-           rel="noopener noreferrer">GitHub ↗</a>
-        <a href="#contact">Contact Me ↗</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="project-icon">🤖</div>
-      <p class="project-type">ARTIFICIAL INTELLIGENCE</p>
-      <h3>AI Learning Project</h3>
-      <p>
-        A space for experimenting with AI concepts,
-        learning tools, and intelligent applications.
-      </p>
-      <div class="tech-tags">
-        <span>Python</span><span>AI</span><span>Learning</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/" target="_blank"
-           rel="noopener noreferrer">GitHub ↗</a>
-        <a href="#contact">Discuss Project ↗</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="project-icon">⚡</div>
-      <p class="project-type">JAVASCRIPT</p>
-      <h3>Interactive Web App</h3>
-      <p>
-        An experimental application focused on useful
-        features, clean interfaces, and user experience.
-      </p>
-      <div class="tech-tags">
-        <span>JavaScript</span><span>UI</span><span>CSS</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/" target="_blank"
-           rel="noopener noreferrer">GitHub ↗</a>
-        <a href="#contact">Discuss Project ↗</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-  <footer>
-    <a class="logo" href="#home">&lt;Dev /&gt;</a>
-    <p>Built with curiosity and code. © <span id="year"></span></p>
-  </footer>
-
-  <!-- EmailJS library -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-  <!-- Your JavaScript -->
-  <script src="script.js"></script>
-
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>farman<span class="brand-dot">.</span></span></a><p>Built with curiosity and code. <span>© <span id="year"></span> Farman Junejo</span></p><a class="back-top" href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
