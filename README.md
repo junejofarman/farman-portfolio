@@ -91,3 +91,19 @@ Software Engineer Under Training | Aspiring Full-Stack Developer
 <p align="center">
   Building. Learning. Improving. One line of code at a time.
 </p>
+## Portfolio Screenshots
+
+### Homepage
+![Portfolio Homepage](Screenshot%202026-10-31%20223623.png)
+
+### About Section
+![About Section](Screenshot%202026-10-31%20223639.png)
+
+### Skills Section
+![Skills Section](Screenshot%202026-10-31%20223659.png)
+
+### Projects Section
+![Projects Section](Screenshot%202026-10-31%20223735.png)
+
+### Contact Section
+![Contact Section](Screenshot%202026-10-31%20223811.png)
